@@ -9,7 +9,13 @@
                 <svg height="500" width="500" id="Map"></svg>
             </div>
             <div id="guessesDiv">
-                <p>Guesses:</p>
+                <p id="guessList">
+                    Guesses: <br>
+
+                </p>
+                <input name="GuessInput" type="text" id="guessBox" list="countriesNames">
+                <datalist id="countriesNames"></datalist>
+                <button onclick="getGuess()">Guess</button>
             </div>
         </div>
         <script src="./Countries.js"></script>
